@@ -51,7 +51,7 @@ input[type="color"]{
 }
 .color-box div{
     width: 100%;
-    height: 80vh;
+    height: 65vh;
 }
 .modes{
     width: 100%;
@@ -97,5 +97,8 @@ p:hover{
     }
     .modes{
         width: 70%;
+    }
+    .color-box div{
+        height: 80vh;
     }
 }

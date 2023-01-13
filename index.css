@@ -89,7 +89,7 @@ p:hover{
     background: azure;
 }
 
-@media(min-width: 800px){
+@media(min-width: 700px){
     .modes{
         width: 65%
     }

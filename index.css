@@ -7,6 +7,7 @@ body{
     background-color: white;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
+    overflow: visible
 }
 main{
     margin: 0 auto;
@@ -44,7 +45,7 @@ input[type="color"]{
 }
 .color-box div{
     width: 100%;
-    height: 85vh;
+    height: 80vh;
 }
 .modes{
     width: 50%;

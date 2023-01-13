@@ -18,18 +18,18 @@ main{
     padding: 10px;
 }
 .input-color input, select, button{
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 .btn-color{
     cursor: pointer;
     background-color: whitesmoke;
     font-family: inherit;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border: 0.4px solid #88898a;
     border-radius: 5px;
     color: #6aa9a3;
     text-shadow: 0 0 0.5px black;
-    padding: 10px;
+    padding: 20px;
 }
 .btn-color:hover{
     background-image: linear-gradient(#D1D5DB, #abaeb2);
@@ -42,7 +42,7 @@ input[type="color"]{
   border:0;
   cursor: pointer;
   border-radius: 3px;
-  height: 35px;
+  height: 70px;
 }
 .color-box{
     display:flex;
@@ -51,7 +51,7 @@ input[type="color"]{
 }
 .color-box div{
     width: 100%;
-    height: 65vh;
+    height: 55vh;
     cursor: pointer;
 }
 .color-box div:hover{
@@ -59,13 +59,14 @@ input[type="color"]{
 }
 .modes{
     width: 100%;
-    padding: 10px;
-    font-size: 0.7rem;
+    padding: 20px;
+    font-size: 0.8rem;
     border: 0.4px solid #88898a;
     border-radius: 5px;
     color: #6aa9a3;
     text-shadow: 0 0 0.5px black;
     background-color: #D1D5DB;
+    text-align: center;
 }
 .modes:focus{
     background-color: #d5d9db;
@@ -88,7 +89,7 @@ p:hover{
     background: azure;
 }
 
-@media(min-width: 600px){
+@media(min-width: 800px){
     .modes{
         width: 65%
     }

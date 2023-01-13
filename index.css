@@ -14,9 +14,11 @@ main{
     max-width: 800px;
 }
 .input-color{
-    display: flex;
-    justify-content: space-between;
+    display:grid;
     padding: 10px;
+}
+.input-color input, select, button{
+    margin-bottom: 8px;
 }
 .btn-color{
     cursor: pointer;
@@ -27,16 +29,20 @@ main{
     border-radius: 5px;
     color: #6aa9a3;
     text-shadow: 0 0 0.5px black;
+    padding: 10px;
 }
 .btn-color:hover{
     background-image: linear-gradient(#D1D5DB, #abaeb2);
+    
 }
 input[type="color"]{
+  width: 100%;
   appearance: none;
   background-color: #abaeb2;
   border:0;
   cursor: pointer;
   border-radius: 3px;
+  height: 35px;
 }
 .color-box{
     display:flex;
@@ -48,7 +54,8 @@ input[type="color"]{
     height: 80vh;
 }
 .modes{
-    width: 50%;
+    width: 100%;
+    padding: 10px;
     font-size: 0.7rem;
     border: 0.4px solid #88898a;
     border-radius: 5px;
@@ -63,15 +70,32 @@ option{
     color: #70B0F0;
 }
 p{
+    padding: 5px 0;
     margin: 10px 0;
     font-size: 0.9rem;
     color: #2B283A;
     text-align: center;
     cursor: pointer;
 }
+p:hover{
+    color:rgb(24, 130, 95);
+    text-shadow: 0 0 0.5px black;
+    box-shadow: 1px 1px 5px black;
+    background: azure;
+}
 
 @media(min-width: 600px){
     .modes{
         width: 65%
+    }
+    .input-color{
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="color"]{
+        width: 70px;
+    }
+    .modes{
+        width: 70%;
     }
 }

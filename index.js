@@ -7,6 +7,9 @@ document.addEventListener('click', function(e){
     else if(e.target.dataset.codHex){
         copy(e.target.dataset.codHex)
     }
+    else if(e.target.dataset.blockHex){
+        copy(e.target.dataset.blockHex)
+    }
 })
 
 function render(){
@@ -19,7 +22,7 @@ function render(){
             res.colors.forEach((color)=>{
                 document.getElementById("color-space").innerHTML+=`
                     <div>
-                        <div style="background-color:${color.hex.value}">
+                        <div data-block-hex=${color.hex.clean} style="background-color:${color.hex.value}">
                         </div>
                         <p data-cod-hex=${color.hex.clean} id=${color.hex.clean}>${color.hex.value}</p>
                     </div>
